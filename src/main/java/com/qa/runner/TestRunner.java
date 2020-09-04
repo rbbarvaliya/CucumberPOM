@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\ravin\\eclipse-workspace\\CucumberPOM\\src\\main\\java\\com\\qa\\features\\freecrm.feature", //the path of the feature files
+		features = {"src/main/java/com/qa/features/homepage.feature","src/main/java/com/qa/features/contacts.feature"},//the path of the feature files
 		glue={"com\\qa\\stepDefinitions"}, //the path of the step definition files
 	    format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format

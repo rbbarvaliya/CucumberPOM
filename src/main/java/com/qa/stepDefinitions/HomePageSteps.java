@@ -44,4 +44,10 @@ public class HomePageSteps extends TestBase {
 		Assert.assertTrue(true);
 	}
 	
+	@Then("^user closes browser$")
+	public void user_closes_browser() throws Throwable {
+		driver.quit();
+
+	}
+	
 }
